@@ -1,0 +1,15 @@
+<svg width="760" height="820" viewBox="0 0 760 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="384" cy="772" rx="270" ry="34" fill="#B7A8E9" fill-opacity="0.35"/>
+  <path d="M246 711C249 594 293 514 380 506C470 498 522 579 531 711H246Z" fill="#17131F"/>
+  <path d="M302 526C329 498 359 485 395 486C430 487 458 502 482 529C455 573 425 596 392 596C356 596 326 573 302 526Z" fill="#E2B49A"/>
+  <path d="M329 383C329 323 359 280 397 280C438 280 466 324 466 384V431C466 487 435 531 397 531C357 531 329 488 329 431V383Z" fill="#EBC0A7"/>
+  <path d="M316 370C318 303 349 252 402 252C448 252 477 290 481 347C463 324 438 310 402 309C366 307 338 329 316 370Z" fill="#211926"/>
+  <path d="M338 381C352 365 371 357 393 358C416 358 436 366 452 382" stroke="#6B4453" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="365" cy="400" r="6" fill="#211926"/>
+  <circle cx="428" cy="400" r="6" fill="#211926"/>
+  <path d="M385 446C394 453 405 453 415 446" stroke="#A15C65" stroke-width="7" stroke-linecap="round"/>
+  <path d="M286 710C296 629 318 578 352 551C366 567 381 578 397 579C413 579 429 567 443 550C480 578 503 632 514 710H286Z" fill="#5E40CC"/>
+  <path d="M319 586L397 677L475 586" stroke="#7B61DB" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="151" y="712" width="466" height="43" rx="21.5" fill="#40315C" fill-opacity="0.22"/>
+  <text x="380" y="770" text-anchor="middle" fill="#665A78" font-family="Arial, sans-serif" font-size="22">Replace with your transparent PNG photo</text>
+</svg>

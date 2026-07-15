@@ -1,0 +1,5 @@
+Add your resume PDF to this folder and name it:
+
+David-Enejo-Resume.pdf
+
+The Download Resume button is already linked to that filename.
