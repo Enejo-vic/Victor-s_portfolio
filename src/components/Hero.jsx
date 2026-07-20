@@ -19,7 +19,7 @@ function Hero() {
             <a className="button button-primary" href="#projects">
               View projects <ArrowDownRight size={18} />
             </a>
-            <a className="button button-secondary" href="/Victor_Enejo_Ab.pdf" download>
+            <a className="button button-secondary" href="/VICTOR'S FRESUME.docx" download>
               Résumé <Download size={17} />
             </a>
           </div>
