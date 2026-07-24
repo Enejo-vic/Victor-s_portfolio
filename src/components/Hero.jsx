@@ -1,5 +1,5 @@
 import { ArrowDownRight, Download, Github, Linkedin } from 'lucide-react'
-
+const resumeUrl = `${import.meta.env.BASE_URL}VICTOR'S FRESUME.docx`
 function Hero() {
   return (
     <section className="hero container" id="home">
@@ -19,7 +19,7 @@ function Hero() {
             <a className="button button-primary" href="#projects">
               View projects <ArrowDownRight size={18} />
             </a>
-            <a className="button button-secondary" href="/VICTOR'S FRESUME.docx" download>
+            <a className="button button-secondary" href={resumeUrl} download>
               Résumé <Download size={17} />
             </a>
           </div>
