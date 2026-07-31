@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, Github } from 'lucide-react'
 import { projects } from '../data/projects'
 
 function Projects() {
@@ -8,52 +8,73 @@ function Projects() {
         <div>
           <p className="eyebrow">Selected work</p>
 
-          <h2>
-            Projects that show how I think and build.
-          </h2>
+          <h2>Projects that show how I think and build.</h2>
         </div>
 
         <p>
-          A selection of responsive web applications and user interfaces I
-          have developed using React, JavaScript and modern front-end
-          technologies.
+          A selection of responsive web applications and interfaces developed
+          with React, JavaScript and modern front-end technologies.
         </p>
       </div>
 
       <div className="project-grid">
         {projects.map((project, index) => (
           <article className="project-card" key={project.title}>
-            <div className="project-number">
-              {String(index + 1).padStart(2, '0')}
+            <div className="project-image">
+              <img
+                src={project.image}
+                alt={`${project.title} preview`}
+                loading="lazy"
+              />
             </div>
 
-            <p className="project-category">
-              {project.category}
-            </p>
+            <div className="project-content">
+              <div className="project-number">
+                {String(index + 1).padStart(2, '0')}
+              </div>
 
-            <h3>{project.title}</h3>
+              <p className="project-category">{project.category}</p>
 
-            <p className="project-description">
-              {project.description}
-            </p>
+              <h3>{project.title}</h3>
 
-            <div className="project-stack">
-              {project.stack.map((technology) => (
-                <span key={technology}>
-                  {technology}
-                </span>
-              ))}
+              <p className="project-description">
+                {project.description}
+              </p>
+
+              <div className="project-stack">
+                {project.stack.map((technology) => (
+                  <span key={technology}>{technology}</span>
+                ))}
+              </div>
+
+              <div className="project-links">
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live Demo
+                    <ArrowUpRight size={17} />
+                  </a>
+                )}
+
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Code
+                    <Github size={17} />
+                  </a>
+                )}
+
+                {!project.liveUrl && !project.githubUrl && (
+                  <span className="project-status">Coming soon</span>
+                )}
+              </div>
             </div>
-
-            <a
-              href={project.href}
-              target={project.href === '#' ? undefined : '_blank'}
-              rel={project.href === '#' ? undefined : 'noreferrer'}
-              aria-label={`View ${project.title}`}
-            >
-              <span>View project</span>
-              <ArrowUpRight size={17} />
-            </a>
           </article>
         ))}
       </div>

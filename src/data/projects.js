@@ -1,26 +1,50 @@
 export const projects = [
   {
+    title: 'PulseBoard Analytics Dashboard',
+    category: 'React Dashboard',
+    description:
+      'A responsive SaaS analytics dashboard for monitoring revenue, customers and business performance. It includes interactive charts, date filters, searchable tables, responsive navigation and dark-mode support.',
+    stack: [
+      'React',
+      'Vite',
+      'JavaScript',
+      'CSS',
+      'Recharts',
+    ],
+    image: '/projects/pulseboard.png',
+    liveUrl: '',
+    githubUrl: '',
+  },
+  {
     title: 'FreshCart Grocery Store',
-    category: 'React Front-End Development',
+    category: 'E-commerce Application',
     description:
-      'A responsive grocery e-commerce interface built with reusable React components. The project includes category navigation, product sections, an About page, newsletter signup, footer navigation and mobile-friendly layouts.',
-    stack: ['React', 'Vite', 'JavaScript', 'CSS', 'Font Awesome'],
-    href: '#',
+      'A responsive grocery shopping application featuring product filtering, search, cart management, persistent cart data and a multi-step checkout interface.',
+    stack: [
+      'React',
+      'Context API',
+      'JavaScript',
+      'CSS',
+      'LocalStorage',
+    ],
+    image: '/projects/freshcart.png',
+    liveUrl: '',
+    githubUrl: '',
   },
   {
-    title: 'Employee Management System',
-    category: 'React Application',
+    title: 'TaskFlow Project Manager',
+    category: 'Productivity Application',
     description:
-      'An employee management application with searchable employee records, individual detail pages, update and delete workflows, responsive components and GraphQL-powered data operations.',
-    stack: ['React', 'JavaScript', 'React Router', 'GraphQL', 'MongoDB'],
-    href: '#',
-  },
-  {
-    title: 'Course Planner Application',
-    category: 'ASP.NET MVC Development',
-    description:
-      'A multi-step course planning application featuring reusable Razor views, structured routing, form validation, SQL-backed data handling and responsive user interfaces.',
-    stack: ['ASP.NET MVC', 'C#', 'Razor', 'HTML', 'CSS', 'JavaScript'],
-    href: '#',
+      'A project-management application that allows users to create, edit, filter and move tasks between workflow stages using a responsive drag-and-drop interface.',
+    stack: [
+      'React',
+      'React DnD',
+      'JavaScript',
+      'CSS',
+      'LocalStorage',
+    ],
+    image: '/projects/taskflow.jpg',
+    liveUrl: '',
+    githubUrl: '',
   },
 ]
