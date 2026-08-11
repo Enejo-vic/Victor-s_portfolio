@@ -28,8 +28,8 @@ export const projects = [
       'LocalStorage',
     ],
     image: '/projects/freshcart.png',
-    liveUrl: '',
-    githubUrl: '',
+    liveUrl: 'https://thefreshcart.vercel.app/',
+    githubUrl: 'https://github.com/Enejo-vic/Victor-s_portfolio',
   },
   {
     title: 'TaskFlow Project Manager',

@@ -20,20 +20,48 @@ function Projects() {
       <div className="project-grid">
         {projects.map((project, index) => (
           <article className="project-card" key={project.title}>
-            <div className="project-image">
-              <img
-                src={project.image}
-                alt={`${project.title} preview`}
-                loading="lazy"
-              />
-            </div>
+            
+            {/* PROJECT IMAGE */}
+            {project.liveUrl ? (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="project-image"
+                aria-label={`Open live ${project.title} project`}
+              >
+                <img
+                  src={project.image}
+                  alt={`${project.title} preview`}
+                  loading="lazy"
+                />
 
+                <div className="project-image-overlay">
+                  <span>
+                    View Live Project
+                    <ArrowUpRight size={17} />
+                  </span>
+                </div>
+              </a>
+            ) : (
+              <div className="project-image">
+                <img
+                  src={project.image}
+                  alt={`${project.title} preview`}
+                  loading="lazy"
+                />
+              </div>
+            )}
+
+            {/* PROJECT CONTENT */}
             <div className="project-content">
               <div className="project-number">
                 {String(index + 1).padStart(2, '0')}
               </div>
 
-              <p className="project-category">{project.category}</p>
+              <p className="project-category">
+                {project.category}
+              </p>
 
               <h3>{project.title}</h3>
 
@@ -41,12 +69,16 @@ function Projects() {
                 {project.description}
               </p>
 
+              {/* TECHNOLOGIES */}
               <div className="project-stack">
                 {project.stack.map((technology) => (
-                  <span key={technology}>{technology}</span>
+                  <span key={technology}>
+                    {technology}
+                  </span>
                 ))}
               </div>
 
+              {/* LINKS */}
               <div className="project-links">
                 {project.liveUrl && (
                   <a
@@ -71,7 +103,9 @@ function Projects() {
                 )}
 
                 {!project.liveUrl && !project.githubUrl && (
-                  <span className="project-status">Coming soon</span>
+                  <span className="project-status">
+                    Coming soon
+                  </span>
                 )}
               </div>
             </div>
