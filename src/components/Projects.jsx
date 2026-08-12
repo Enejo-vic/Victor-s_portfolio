@@ -8,7 +8,7 @@ function Projects() {
         <div>
           <p className="eyebrow">Selected work</p>
 
-          <h2>Projects that show how I think and build.</h2>
+          <h2>Interfaces built for real users and real interactions.</h2>
         </div>
 
         <p>

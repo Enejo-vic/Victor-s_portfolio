@@ -5,15 +5,17 @@ function Hero() {
     <section className="hero container" id="home">
       <div className="hero-card">
         <div className="hero-copy">
-          <p className="eyebrow">Computer Science · Data · Cloud</p>
+          <p className="eyebrow">React • JavaScript • TypeScript • UI Engineering</p>
 
           <h1>
-            I build useful digital products with <span>data and code.</span>
+            Building thoughtful interfaces with <span>code and design.</span>
           </h1>
 
           <p className="hero-description">
-            I’m Victor Enejo, a developer and data enthusiast. I enjoy building digital products that solve real-world problems and make life easier for people. I’m currently exploring roles across software, data, cloud and technical support.  
-          </p>
+I’m a Front-End Engineer focused on building responsive, accessible
+  and user-friendly interfaces with React, JavaScript, TypeScript,
+  HTML and CSS. I enjoy turning designs and ideas into polished,
+  maintainable web experiences that work smoothly across devices.          </p>
 
           <div className="hero-actions">
             <a className="button button-primary" href="#projects">
